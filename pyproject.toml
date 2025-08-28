@@ -1,0 +1,19 @@
+[tool.briefcase]
+project_name = "MeteoPoint"
+bundle = "org.ecomet.meteopoint"
+version = "0.0.1"
+description = "A weather information app for Android"
+
+[tool.briefcase.app.meteopoint]
+formal_name = "MeteoPoint"
+icon = "resources/icon"
+splash = "resources/splash"
+requires = [
+    "toga>=0.4.0",
+    "requests>=2.28.0",
+    "pyjnius>=1.4.0",
+]
+
+[tool.briefcase.app.meteopoint.android]
+permissions = ["INTERNET"]
+min_sdk_version = 34
